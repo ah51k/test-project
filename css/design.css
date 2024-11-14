@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    --back : #222;
+    color: #fff;
+    transition: all .5s ease;
+    user-select: none;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(135deg ,var(--back) , #333);
+}
+.container{
+    margin: 40px auto;
+    width: 500px;
+    height: 80%;
+    background-color: #333;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.turnSignal{
+    background-color: #222;
+    width: 120px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+    overflow: hidden;
+}
+#turn{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(124, 113, 139, 0.61);
+    border-radius: 15px;
+    right: 4px;
+    transition: .5s;
+}
+.game{
+    width: 390px;
+    height: 390px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+.squers{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly; 
+    margin-top: 20px ;
+    margin-left: 35px ;
+}
+.squer{
+    margin-right:30px ;
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 80px;
+}
+.squer:hover{
+    background-color: #444;
+    transform: scale(1.1);
+}
+.waiting{
+    display: none;
+    width: 400px;
+    height: 400px;
+    background: #3a3a3a57;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50% );
+    transition: .5s;
+    border-radius: 15px;
+    font-size: 32px;
+    text-align: center;
+}
+.waiting > p {
+    margin: 150px auto;
+}
+.waiting p span {
+    font-size: 45px;
+}

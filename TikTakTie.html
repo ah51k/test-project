@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/design.css" />
+  </head>
+  <body>
+    <div class="waiting">
+      <p class="tex">wait for the next match bitch <span>🖕</span></p>
+    </div>
+    <div class="container">
+      <div class="turnSignal" id="turnSignal">
+        <span>X</span>
+        <span>O</span>
+        <div id="turn"></div>
+      </div>
+      <div class="game">
+        <div class="squers">
+          <div class="squer" onclick="addSign(this.id)" id="item1"></div>
+          <div class="squer" onclick="addSign(this.id)" id="item2"></div>
+          <div class="squer" onclick="addSign(this.id)" id="item3"></div>
+        </div>
+        <div class="squers">
+          <div class="squer" onclick="addSign(this.id)" id="item4"></div>
+          <div class="squer" onclick="addSign(this.id)" id="item5"></div>
+          <div class="squer" onclick="addSign(this.id)" id="item6"></div>
+        </div>
+        <div class="squers">
+          <div class="squer" onclick="addSign(this.id)" id="item7"></div>
+          <div class="squer" onclick="addSign(this.id)" id="item8"></div>
+          <div class="squer" onclick="addSign(this.id)" id="item9"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/game.js"></script>
+</html>
